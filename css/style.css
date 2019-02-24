@@ -1,0 +1,145 @@
+body {
+    background: rgb(103,98,176);
+    background: linear-gradient(180deg, rgba(103,98,176,1) 0%, rgba(55,52,172,1) 100%, rgba(97,97,215,1) 100%, rgba(0,212,255,1) 100%);
+    /*padding: 50px;*/
+    /* background: rgba(10, 42, 60, 0.9); */
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: white;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row;
+}
+
+@media screen and (max-width: 1024px) {
+    #hauptmain, #aside_1, #picAd, aside, footer { transform: scale(.85); }
+}
+
+@media screen and (max-width: 768px) {
+    #picAd { display: none }
+}
+
+p { font-size: 110%; }
+
+h1 {
+    font-family: "brandon-grotesque", sans-serif;
+    text-align: center;
+    text-decoration: underline;
+    color: yellow;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    padding: 20px;
+}
+
+.highlight {
+    background: url('../img/brush-stroke-banner-6.png') no-repeat;
+    background-size: 100% 95%;
+    padding: 8px 0;
+}
+
+h2 {
+    text-align: right;
+    color: rgb(218, 67, 40);
+}
+
+em {
+    color: ghostwhite;
+    font-weight: bold;
+}
+
+#dotted {
+    width: 670px;
+    border-width: medium;
+    border-style: dashed;
+    border-color: #D56C2C;
+    background-color: #181818;
+    color: #FACD3D;
+    font-size: 125%;
+    box-sizing: border-box;
+    line-height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#aside_1 {
+    /*flex-basis: 75%;*/
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    font-style: italic;
+    margin-top: 15px;
+}
+
+#adresse_labelbox {
+    border: 1px;
+    /*border-width: medium;*/
+    background-color: #AC2832;
+    flex-basis: 20px;
+    text-align: center;
+}
+
+#adresse {
+    justify-content: space-around;
+    background-color: #DFD297;
+    color: #E25D33;
+    flex-basis: 40px;
+    padding: 10px;
+    margin-top: 4px;
+}
+
+ul.info { font-size: 75%; }
+
+li:nth-child(n+7) {
+    color: green;
+    font-style: italic;
+}
+
+/* visited link */
+a:visited { color: orange; }
+
+/* mouse over link */
+a:hover { background-color: #70AB8F; }
+
+ol { font-style: italic; }
+
+#datum {
+    text-align: right;
+    font-size: 80%;
+}
+
+hr {
+    color: rgb(106, 36, 41);
+    height: 2px;
+}
+
+#countdown {
+    box-sizing: content-box;
+    background: #4C3327;
+    padding: 10px;
+    text-align: center;
+    color: rgb(49, 231, 33);
+    font-size: 30px;
+}
+
+.handynummer a::before {
+    content: url("../img/phone.png");
+    margin-right: 5px;
+}
+
+.adresse a::before {
+    content: url("../img/home.png");
+    margin-right: 5px;
+    /* margin-bottom: -25 px; */
+}
+
+#picAd {
+    transform: scale(.7);
+    text-align: center;
+}
+
+#clip {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
