@@ -8,11 +8,11 @@ function Person(name, tel, add, confirmed) {
 let hung = new Person("Hùng", "+49 1525 492 5039", "Hahnenstr. 27, 50354 Hürth", true);
 let trang = new Person("Trang", "+49 1628 784 463", "Rathausstr. 49, 53225 Bonn", true);
 let pa = new Person("Phương Anh", "+49 1520 823 3047", "Frankfurt", true);
-let chi = new Person("Chi", "+49 1522 1090 319", "Hannover", false);
+let chi = new Person("Chi", "+49 1522 1090 319", "Hannover", true);
 let duc = new Person("Đức", "+49 1523 8799 619", "Dortmund", true);
 let hanh = new Person("Hạnh", "+49 1520 723 0978", "Koethen", true);
 let bang = new Person("Băng", "+49 1764 761 7879", "Magdeburg", true);
-let khanh = new Person("Khánh", "+49 1590 199 0801", "Berlin", false);
+let khanh = new Person("Khánh", "+49 1590 199 0801", "Berlin", true);
 let hieu = new Person("A Hiếu", "+49 1728 752 318", "Heilbronn", true);
 
 const participants = [hung, trang, pa, chi, duc, hanh, bang, khanh, hieu];
