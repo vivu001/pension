@@ -42,6 +42,12 @@ contentBlock.innerHTML = `<ul>
               <li>Ngủ: nhà Hùng & nhà Trang</li>
             </ul>
           </li>
+          <li>Đi lại trong 2 ngày:
+          <ul class="info">
+            <li>Mọi người có thể tham khảo mua vé nhóm tại <a href="https://www.vrs-ticketshop.de/en/TagesTicket-5-Personen-4.html">đây</a></li>
+            <li>Ý kiến cá nhân: Vé hiệu lực trong 24h, vậy nên tốt nhất mua vé tính từ sáng thứ 7 đi từ nhà Trang, gültig tới sáng chủ nhật</li>
+          </ul>  
+          </li>        
         </ul>`;
 contentBlock.style.lineHeight = ("2");
 
@@ -85,3 +91,8 @@ function addInfo(person, gmap) {
           <a href=${gmap}>${person.add}</a>
         </div>`;
 }
+
+/*--------------- get DATUM ---------------*/
+// let date = new Date();
+// let datum = document.getElementById("datum");
+// datum.innerHTML = `last updated ${date.getDate()}.${date.getMonth()+1}.${date.getFullYear()}`;
