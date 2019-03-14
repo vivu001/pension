@@ -14,8 +14,9 @@ let hanh = new Person("Hạnh", "+49 1520 723 0978", "Koethen", true);
 let bang = new Person("Băng", "+49 1764 761 7879", "Magdeburg", true);
 let khanh = new Person("Khánh", "+49 1590 199 0801", "Berlin", true);
 let hieu = new Person("A Hiếu", "+49 1728 752 318", "Heilbronn", true);
+let tu = new Person("Tú", "+xxx", "Erfurt", true);
 
-const participants = [hung, trang, pa, chi, duc, hanh, bang, khanh, hieu];
+const participants = [hung, trang, pa, chi, duc, hanh, bang, khanh, hieu, tu];
 
 let contentBlock = document.getElementById("dotted");
 contentBlock.innerHTML = `<ul>
@@ -25,14 +26,12 @@ contentBlock.innerHTML = `<ul>
               <li>Mọi người có thể ra về từ <em>SÁNG</em> chủ nhật, ai muốn ở lại chơi thêm qua t2 cũng ok, nhưng không phải ở Köln vì Hùng bận</li>
             </ul>
           </li>
-          <li>Tham gia: <span id = "name"></span>
-            <ul class="info">
-              <li>Ai có gấu (alt oder neu) có thể mang theo, nhưng cần báo trước để thu xếp chỗ ngủ ^^</li>
-            </ul>
-          </li>
+          <li>Tham gia: <span id = "name"></span> </li>
           <li>Ăn uống: <em>Köln</em>
             <ul class="info">
-              <li>Việc nấu nướng & ăn uống sẽ diễn ra tại nhà Hùng vào <em>SÁNG THỨ 7</em></li>
+              <li>Việc nấu nướng & ăn uống sẽ diễn ra tại nhà Hùng vào <em>THỨ 7, dự kiến tới 14h30</em></li>
+              <li>Nguyên vật liệu nấu nướng do Hùng đảm nhận. Mọi người không phải mang gì theo. Cần thì hỏi Hùng</li>
+              <li>Ăn tối: Tùy tình hình thời tiết</li>
             </ul>
           </li>     
           <li>Đi chơi + ngủ: <em>Köln - Bonn</em>
@@ -47,7 +46,13 @@ contentBlock.innerHTML = `<ul>
             <li>Mọi người có thể tham khảo mua vé nhóm tại <a href="https://www.vrs-ticketshop.de/en/TagesTicket-5-Personen-4.html">đây</a></li>
             <li>Ý kiến cá nhân: Vé hiệu lực trong 24h, vậy nên tốt nhất mua vé tính từ sáng thứ 7 đi từ nhà Trang, gültig tới sáng chủ nhật</li>
           </ul>  
-          </li>        
+          </li>   
+          <li>Lưu ý:</li>   
+          <ul class="info">  
+            <li>Thời tiết cuối tuần này không đẹp lắm &#x1F327 &#x1F327 &#x1F327, vậy mọi người chú ý mặc ấm và mang theo &#x2602 &#x2602 &#x2602</li>
+            <li>Ai có Hausschuhe mang đi cũng ok</li>
+          </ul>
+          &#128644 &#9992 &#128652 GUTE HEIMFAHRT & BIS SAMSTAG !!! &#10084 &#10084 &#10084
         </ul>`;
 contentBlock.style.lineHeight = ("2");
 
